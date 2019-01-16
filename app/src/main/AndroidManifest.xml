@@ -20,6 +20,14 @@
         <activity android:name=".OptionsActivity">
 
         </activity>
+
+        <activity android:name=".PlayActivity">
+
+        </activity>
+
+        <activity android:name=".HighscoreActivity">
+
+        </activity>
     </application>
 
 </manifest>
