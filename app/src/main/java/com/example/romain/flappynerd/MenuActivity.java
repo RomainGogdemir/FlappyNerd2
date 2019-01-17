@@ -18,6 +18,7 @@ public class MenuActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_menu);
 
         mPlayButton = findViewById(R.id.activity_menu_play_button);
         mHighscoreButton = findViewById(R.id.activity_menu_highscore_button);
