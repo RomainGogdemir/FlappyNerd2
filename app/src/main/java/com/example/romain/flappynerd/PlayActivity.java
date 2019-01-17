@@ -13,6 +13,7 @@ public class PlayActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_play);
 
         mEndOfPlay = findViewById(R.id.activity_play_end_of_game_button);
 
@@ -21,13 +22,10 @@ public class PlayActivity extends AppCompatActivity {
             @Override
             public void onClick(View v)
             {
-                Intent menuActivity = new Intent(PlayActivity.this, MenuActivity.class);
-                startActivity(menuActivity);
+                finish();
             }
 
         });
-
-        setContentView(R.layout.activity_play);
     }
 
 }
