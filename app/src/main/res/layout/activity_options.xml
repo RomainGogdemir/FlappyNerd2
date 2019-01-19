@@ -1,6 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
+
+    <StackView
+        android:id="@+id/OptionsStackView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/menuBackground"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Switch
+        android:id="@+id/activity_options_option1_stackview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:padding="10dp"
+        android:background="@android:color/background_light"
+        android:gravity="start"
+        app:fontFamily="serif"
+        android:text="Option1" />
+
+    <SeekBar
+        android:id="@+id/activity_options_volume_choser_stackview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:padding="10dp"
+        android:paddingStart="100dp"
+        android:paddingEnd="10dp"
+        android:paddingLeft="100dp"
+        android:paddingRight="10dp"
+        android:background="@android:color/background_light"
+        android:gravity="end"
+        app:layout_constraintTop_toBottomOf="@+id/activity_options_option1_stackview"
+        app:layout_constraintStart_toEndOf="@id/activity_options_volume_choser_name_stackview"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/activity_options_volume_choser_name_stackview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="none"
+        android:gravity="start"
+        android:layout_margin="3dp"
+        android:padding="10dp"
+        android:background="@android:color/background_light"
+        android:textColor="@android:color/background_dark"
+        app:fontFamily="serif"
+        android:text="Volume"
+        app:layout_constraintTop_toBottomOf="@+id/activity_options_option1_stackview"/>
+
+
 
 </android.support.constraint.ConstraintLayout>
